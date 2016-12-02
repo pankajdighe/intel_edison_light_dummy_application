@@ -6,7 +6,9 @@ mqttc=mqtt.Client()
 mqttc.connect("iot.eclipse.org",1883,60)
 mqttc.loop_start()
 
-#read temperature
+#read light
+#read
+
 def read_light_data():
     return random.randint(30, 70)
 
