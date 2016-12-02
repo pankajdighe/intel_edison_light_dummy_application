@@ -13,6 +13,7 @@ def read_light_data():
 #publish temperature
 while 1:
     t=read_light_data()
+    print "Publishing data"
     (result,mid)=mqttc.publish("topic/GeneralizedIoT/light",t,2)
     time.sleep(1)
 
